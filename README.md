@@ -25,7 +25,7 @@ In this example, the `video` element is not added until after the `ngIf` express
 
 ```
 <div my-directive>
-  <video *dom-on-create="videoElCreated()"* ng-if="videoStream !== null" ng-src="{{ someUrl }} />
+  <video dom-on-create="videoElCreated()" ng-if="videoStream !== null" ng-src="{{ someUrl }} />
 </div>
 ```
 
@@ -39,7 +39,7 @@ In this example, the `video` element is not added until after the `ngIf` express
 ## domOnDestroy
 
 ```
-  <video *dom-on-destroy="videoElDestroyed()"* ng-if="videoStream !== null" ng-src="{{ someUrl }} />
+  <video dom-on-destroy="videoElDestroyed()" ng-if="videoStream !== null" ng-src="{{ someUrl }} />
 ```
 
 ```
