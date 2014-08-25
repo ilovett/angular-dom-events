@@ -5,7 +5,11 @@ This module aims to allow hooking into dom events using directives.  It come in 
 
 # Setup
 
-bower install angular-dom-events
+## Install
+
+    bower install angular-dom-events --save
+
+## Enable
 
 Add to module dependencies:'ngDomEvents'
 
@@ -27,6 +31,7 @@ In this example, the `video` element is not added until after the `ngIf` express
 
 ```
   scope.videoElCreated = function() {
+    // firefox doesn't support attribute muted="muted"
     element.find('video').get(0).muted = "muted";
   }
 ```
