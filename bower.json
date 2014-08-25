@@ -1,0 +1,31 @@
+{
+  "name": "angular-dom-events",
+  "version": "0.0.1",
+  "main": "./angular-dom-events.js",
+  "homepage": "https://github.com/ilovett/angular-dom-events",
+  "authors": [
+    "Ian Lovett <i.c.lovett@gmail.com>"
+  ],
+  "description": "Provides directive hooks to dom events such as create and destroy in conjunction with ngIf.",
+  "keywords": [
+    "angular",
+    "async",
+    "hooks",
+    "task",
+    "subscribe",
+    "subscription",
+    "publish",
+    "publisher",
+    "promise",
+    "manager",
+    "hook"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
