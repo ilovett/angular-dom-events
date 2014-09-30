@@ -9,12 +9,15 @@
      * @description
      * # domOnCreate
      */
-    .directive('domOnCreate', function($parse) {
+    .directive('domOnCreate', function($parse, $timeout) {
       return {
         link: function postLink(scope, element, attrs) {
-          if (attrs.domOnCreate) {
-            $parse(attrs.domOnCreate)(scope);
-          }
+          // wrap in a timeout to allow directives to link scope callbacks
+          $timeout(function() {
+            if (attrs.domOnCreate) {
+              $parse(attrs.domOnCreate)(scope);
+            }
+          });
         }
       };
     })
